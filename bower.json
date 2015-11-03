@@ -1,0 +1,25 @@
+{
+  "name": "EdmondWang.github.io",
+  "description": "My Github page",
+  "main": "index.js",
+  "authors": [
+    "EdmondWang"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "blog"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "react": "~0.14.2"
+  }
+}
