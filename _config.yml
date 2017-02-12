@@ -11,7 +11,7 @@ email: 644568491@qq.com
 description: > # To record any exicting, impressive and beautiful moment of our life.
 baseurl: "" # the subpath of your site, e.g. /blog
 lang: "en"
-url: "localhost:4000" # the base hostname & protocol for your site
+url: "https://edmondwang.github.io" # the base hostname & protocol for your site
 twitter_username:
 github_username:  EdmondWang
 disqus_username:
