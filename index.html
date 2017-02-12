@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-<html>
-<meta charset="utf-8" />
-<head>
-  <title>Wang, Yi Edmond</title>
-  <link rel="stylesheet" type="text/css" href="./styles.css" />
-</head>
-<body>
-<h1 class="ed-title">Wang, Yi Edmond</h1>
-<div></div>
-<script type="text/javascript" src="bower_components/react/react.js"></script>
-</body>
-</html>
+---
+bg: "rails.jpg"
+layout: default
+crawlertitle: "Jekyll blog"
+title: "Voyager"
+summary: "main page"
+---
+
+{% for post in site.posts limit: 5 %}
+  <article class="index-page">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    {{ post.excerpt }}
+  </article>
+{% endfor %}

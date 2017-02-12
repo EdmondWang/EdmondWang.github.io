@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Greeting!!"
-date:   2016-12-21 14:17:30 +0800
-categories: jekyll update
----
-Hello Buddy, welcome to my personal website. It focus on sharing different kinds
-of knowledge among software developers. My name is Wang, Yi Edmond, was born in 1991, lives in Shanghai now. I am an web developer and love coding.
-Let us enjoy it, please!
