@@ -1,0 +1,25 @@
+{
+  "name": "EdmondWang.github.io",
+  "version": "1.0.0",
+  "description": "My Github page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdmondWang/EdmondWang.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "EdmondWang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdmondWang/EdmondWang.github.io/issues"
+  },
+  "homepage": "https://github.com/EdmondWang/EdmondWang.github.io",
+  "devDependencies": {
+    "bower": "^1.6.5"
+  }
+}
