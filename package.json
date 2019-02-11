@@ -1,0 +1,32 @@
+{
+  "name": "EdmondWang.github.io",
+  "version": "1.0.0",
+  "description": "Port page of Edmond Wang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdmondWang/EdmondWang.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdmondWang/EdmondWang.github.io/issues"
+  },
+  "homepage": "https://github.com/EdmondWang/EdmondWang.github.io#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-load-plugins": "^1.5.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "marked": "^0.6.0"
+  }
+}
