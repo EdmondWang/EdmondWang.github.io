@@ -1,25 +1,33 @@
 {
   "name": "EdmondWang.github.io",
   "version": "1.0.0",
-  "description": "My Github page",
+  "description": "Port page of Edmond Wang",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EdmondWang/EdmondWang.github.io.git"
+    "url": "git+https://github.com/EdmondWang/EdmondWang.github.io.git"
   },
-  "keywords": [
-    "blog"
-  ],
-  "author": "EdmondWang",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EdmondWang/EdmondWang.github.io/issues"
   },
-  "homepage": "https://github.com/EdmondWang/EdmondWang.github.io",
+  "homepage": "https://github.com/EdmondWang/EdmondWang.github.io#readme",
   "devDependencies": {
-    "bower": "^1.6.5"
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "eslint": "^5.13.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-load-plugins": "^1.5.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "marked": "^0.6.0"
   }
 }

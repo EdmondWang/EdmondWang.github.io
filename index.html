@@ -1,14 +1,9 @@
----
-bg: "edmond.jpg"
-layout: default
-crawlertitle: "Edmond & Jocelyn's blog"
-title: "Edmond & Jocelyn"
-summary: "main page"
----
+<!DOCTYPE html>
+<html>
+  <head>
 
-{% for post in site.posts limit: 5 %}
-  <article class="index-page">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    {{ post.excerpt }}
-  </article>
-{% endfor %}
+  </head>
+  <body>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>
