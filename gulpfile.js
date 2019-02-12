@@ -3,15 +3,11 @@
 const { series, src, dest } = require("gulp");
 const plugins = require("gulp-load-plugins")();
 
-/*(function registerTasks(names) {
+(function registerTasks(names) {
   names.forEach(name => {
     exports[name] = require("./gulp-tasks/" + name)(plugins);
   });
-})(["clean"]);*/
-
-function clean() {
-  return Promise.resolve("clean");
-}
+})(["clean"]);
 
 function js() {
   return src("./src/*.js")
@@ -26,5 +22,5 @@ function css() {
   return Promise.resolve("css");
 }
 
-exports.build = series(clean, js, css);
+exports.build = series(exports["clean"], js, css);
 exports.default = exports.build;
