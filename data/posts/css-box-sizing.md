@@ -1,51 +1,23 @@
 ---
-bg: "tools.jpg"
-layout: post
-title:  "CSS Box Sizing"
-crawlertitle: "border-box VS content-box"
-summary: "A demo to show the difference between border-box and content-box."
-date:   2017-02-12 17:00:43 +0800
-categories: posts
-tags: ['front-end']
+title:  "CSS Z-Index"
 author: Edmond
 ---
 
-最近工作中使用到css box-sizing属性，以一个简单的例子特此记录。
+CSS Z-index
+1. Z-index only works on positioned element other than default value.
+2. Z-index creates stack context.
+3. Stack context is formed in html, position != static & z-index != auto, opacity < 1.
+4. Transforms creates stack context as well.
 
-实验
-===
-css代码：
-{% highlight css %}
-.monitor {
-    font-size: 16px;
-    width: 100px;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid black;
-    box-sizing: content-box;
-}
-{% endhighlight %}
+Z-index Order:
+1. Document Root
+2. Positioned element with negative z-index value.
+3. Non-positioned element
+4. Positioned element with auto z-index value
+5. Position element with positive z-index value.
 
-html代码：
-{% highlight html %}
-<div id="hp" class="monitor"></div>
-{% endhighlight %}
-
-效果
-===
-
-指定 box-sizing 为 content-box：
-[![railroad]({{ site.images }}/content-box.png)]({{ site.images }}/content-box.png)
-[![railroad]({{ site.images }}/content-box-inspector.png)]({{ site.images }}/content-box-inspector.png)
-指定 box-sizing 为 border-box：
-[![railroad]({{ site.images }}/border-box.png)]({{ site.images }}/border-box.png)
-[![railroad]({{ site.images }}/border-box-inspector.png)]({{ site.images }}/border-box-inspector.png)
-
-结论
-===
-
-1. 当指定 box-sizing 为 content-box：div 中 content 的 width 等于 css 中设置的 width
-（100px ）
-2. 当指定 box-sizing 为 border-box： div 中 content 的 width 等于 css 中设置的 width - padding width * 2 - border width * 2
-（100 - 10 * 2 - 1 * 2 = 78px ）
-3. 常见应用： 有时候设置子元素的padding或者border, 会把父元素撑破，为了避免这种情况，我们可以指定子元素的box-sizing为border-box。
+Knowledege Reference:
+1. What no one told you about z-index
+https://philipwalton.com/articles/what-no-one-told-you-about-z-index/.
+2. Better Solution managing z-index
+https://www.w3cplus.com/preprocessor/better-solution-managing-z-index-sass.html.

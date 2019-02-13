@@ -7,11 +7,11 @@ let ep = exports;
   names.forEach(name => {
     ep[name] = require("./gulp-tasks/" + name)(plugins);
   });
-})(["clean", "script"]);
+})(["clean", "script", "process-post-md"]);
 
 function css() {
   return Promise.resolve("css");
 }
 
-ep.build = series(ep["clean"], ep["script"], css);
+ep.build = series(ep["clean"], ep["script"], css, ep["process-post-md"]);
 ep.default = ep.build;
