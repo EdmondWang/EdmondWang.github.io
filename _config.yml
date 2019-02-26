@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Edmond & Jocelyn
+title: Edmond Wang
 email: 644568491@qq.com
 description: > # To record any exicting, impressive and beautiful moment of our life.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -40,3 +40,6 @@ sass:
 
 
 images: '/assets/images'
+
+plugins:
+  - jekyll-admin
