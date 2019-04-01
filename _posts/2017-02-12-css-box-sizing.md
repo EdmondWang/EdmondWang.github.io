@@ -45,5 +45,7 @@ Summary
 ===
 
 1. The width of node content is equal to the width specifed in CSS code when the `box-sizing` is set to `content-box`. (100px )
-2. The width of node content is equal to the
-    "width - padding width * 2 - border width * 2" => "100 - 10 * 2 - 1 * 2 = 78px" when the `box-sizing` is set to `border-box`.
+2. The width of node content is equal to below when the `box-sizing` is set to `border-box`. (78px )
+{% highlight css %}
+css width - horizontal padding width - horizontal border width
+{% endhighlight %}
