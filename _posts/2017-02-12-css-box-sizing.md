@@ -1,20 +1,20 @@
 ---
 bg: "tools.jpg"
 layout: post
-title:  "CSS Box Sizing"
-crawlertitle: "border-box VS content-box"
-summary: "A demo to show the difference between border-box and content-box."
+title:  "Box Sizing in CSS"
+crawlertitle: "border-box VS content-box in CSS"
+summary: "A demo to show the difference between border-box and content-box in CSS."
 date:   2017-02-12 17:00:43 +0800
 categories: posts
-tags: ['front-end']
+tags: ['front-end', 'css']
 author: Edmond
 ---
+Recenlty I am facing the issue caused by wrong value of box sizing in CSS.
+Thus I make a demo below to remind myself.
 
-最近工作中使用到css box-sizing属性，以一个简单的例子特此记录。
-
-实验
+Expirement
 ===
-css代码：
+CSS Code：
 {% highlight css %}
 .monitor {
     font-size: 16px;
@@ -26,26 +26,24 @@ css代码：
 }
 {% endhighlight %}
 
-html代码：
+HTML Code:
 {% highlight html %}
 <div id="hp" class="monitor"></div>
 {% endhighlight %}
 
-效果
+Result
 ===
 
-指定 box-sizing 为 content-box：
+when specify box-sizing as content-box：
 [![railroad]({{ site.images }}/content-box.png)]({{ site.images }}/content-box.png)
 [![railroad]({{ site.images }}/content-box-inspector.png)]({{ site.images }}/content-box-inspector.png)
-指定 box-sizing 为 border-box：
+when specify box-sizing as border-box：
 [![railroad]({{ site.images }}/border-box.png)]({{ site.images }}/border-box.png)
 [![railroad]({{ site.images }}/border-box-inspector.png)]({{ site.images }}/border-box-inspector.png)
 
-结论
+Summary
 ===
 
-1. 当指定 box-sizing 为 content-box：div 中 content 的 width 等于 css 中设置的 width
-（100px ）
-2. 当指定 box-sizing 为 border-box： div 中 content 的 width 等于 css 中设置的 width - padding width * 2 - border width * 2
-（100 - 10 * 2 - 1 * 2 = 78px ）
-3. 常见应用： 有时候设置子元素的padding或者border, 会把父元素撑破，为了避免这种情况，我们可以指定子元素的box-sizing为border-box。
+1. The width of node content is equal to the width specifed in CSS code when the `box-sizing` is set to `content-box`. (100px )
+2. The width of node content is equal to the
+    "width - padding width * 2 - border width * 2" => "100 - 10 * 2 - 1 * 2 = 78px" when the `box-sizing` is set to `border-box`.
