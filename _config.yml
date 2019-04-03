@@ -41,5 +41,5 @@ sass:
 
 images: '/assets/images'
 
-plugins:
+plugins_dir:
   - jekyll-admin
